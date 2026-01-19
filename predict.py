@@ -1,6 +1,8 @@
 import sys
 import json
 import joblib
+import warnings
+warnings.filterwarnings('ignore')
 
 model = joblib.load("best_model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
